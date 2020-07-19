@@ -1,0 +1,20 @@
+
+<section id="menu-bar">
+    {#    <div class="navbar-menu-wrapper" style="background-image: url({% static 'image/cover.jpeg' %});">#}
+    <div class="navbar-menu-wrapper">
+        <nav class="navbar navbar-expand-lg menubar2">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto menu-adujst">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'blogcrud:landingpage' %}">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blogcrud:listblogs' %}">Blog List</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
+ <hr>

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    {% include 'nav.html' %}
+    <div class="container blog-detail">
+    <p>Blog No: {{ blogdetail.id }}</p>
+        <center> <h3>{{ blogdetail.title }}</h3><br>
+    <img src="{{ blogdetail.images.url }}" height="500" width="100%"></center><br>
+    <br>
+    <b>Author:{{ blogdetail.author }}</b><br>
+    <b>Date Created:{{ blogdetail.date_created }}</b><br>
+        {% if blogdetail.date_updated %}
+            <b>Last Update: {{ blogdetail.date_updated }}</b>
+        {% endif %}
+    <hr>
+    <p>
+        {{ blogdetail.content }}
+    </p>
+    </div>
+
+
+{% endblock %}
+

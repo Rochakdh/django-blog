@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    {% include 'nav.html' %}
+    <div class="container ">
+        <div class="blog">
+            <h1>
+                <center>Blogs List</center>
+            </h1>
+        </div>
+    </div>
+    <br>
+    {% for blog in blog_list %}
+    <div class="container blog-list">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>{{ blog.title }}</h4>
+                <h6><i>Author: {{blog.author}}</i></h6>
+            </div>
+            <div class="col-md-3">
+                Created: {{ blog.date_created }}
+            </div>
+            <div class="col-md-3">
+                Updated: {{ blog.date_updated }}
+            </div>
+            <div class="col-md-2">
+                <button name="view" class="btn-view"><a href="{% url 'blog:blogdetail' blog.id %}">View Detail </a></button>
+{#                <a href="{% url 'blogcrud:blogdetail' %}">View Detail </a>#}
+            </div>
+        </div>
+    </div>
+        <br>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="background" style="background-image: url('{% static 'image/background.jpg' %}');">
+     {% include 'nav.html' %}
+        <section id="blog-wrap">
+            <div class="container read-blog-wrapper">
+                <div class="blog" style="height: 500px; ">
+                    <h1>
+                        <br>
+                        <center><i>FEEL FREE TO CREATE BLOGS</i></center>
+                    </h1>
+                </div>
+                {#        <div class="row">#}
+                {#            <div class="col-md-4 blog-content">#}
+                {#                <div class="inner-blog">#}
+                {#                    <center><img src="{% static "image/background.jpg" %}" height="200px"></center>#}
+                {#                    <hr>#}
+                {#                </div>#}
+                {#            </div>#}
+                {#            <div class="col-md-4 blog-contet">#}
+                {#                <div class="inner-blog">#}
+                {#                </div>#}
+                {#            </div>#}
+                {#            <div class="col-md-4 blog-contet">#}
+                {#                <div class="inner-blog">#}
+                {#                </div>#}
+                {#            </div>#}
+                {#            <div class="col-md-4 blog-contet">#}
+                {#                <div class="inner-blog">#}
+                {#                </div>#}
+                {#            </div>#}
+                {#        </div>#}
+            </div>
+        </section>
+    </div>
+{% endblock %}
+

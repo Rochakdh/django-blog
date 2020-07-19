@@ -1,0 +1,50 @@
+.menubar1{
+    background: black !important;
+    padding: 2px 40px !important;
+    color: white;
+}
+.menubar1 a{
+    color: white;
+}
+.menubar2 a{
+    color: black;
+}
+
+.menubar2{
+    margin:0 39%;
+    /*padding:0 50%;*/
+}
+
+.nav-link{
+    margin:5px 20px;
+}
+.navbar-menu-wrapper{
+    padding-top:20px ;
+    height: auto;
+}
+.inner-blog{
+    height: 400px;
+    background: white;
+}
+.inner-blog img{
+    height: 200px;
+    margin-top: 20px;
+}
+.blog{
+    margin-bottom: 20px;
+}
+.blog-content{
+    margin-bottom: 30px;
+    border: 1px ridge;
+}
+.blog-list{
+    width: 80%;
+    height: auto;
+    background: #edebeb;
+    border-radius: 20px;
+    padding:20px 50px !important;
+}
+
+.background{
+    background: url("static/image/background.jpg");
+}
